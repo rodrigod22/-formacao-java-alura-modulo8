@@ -17,8 +17,13 @@ public class TestaCurso2 {
 		java.adiciona(new Aula("Modelando coleções", 16));
 		
 		List<Aula> aulasImutaveis = java.getAulas();
+		
+		//nao funciona pq a colecao devolvida e imutavel
+		//Collections.sort(aulasImutaveis);
+		
 		System.out.println(aulasImutaveis);
 		
+			
 		// cria uma nova lista recebendo o array original imutavel
 		List<Aula> aulas = new ArrayList<Aula>(aulasImutaveis);
 			
