@@ -1,6 +1,6 @@
 package br.com.alura;
 
-import java.util.List;
+import java.util.Iterator;
 import java.util.Set;
 
 public class TestaCursoComAlunos {
@@ -36,6 +36,13 @@ public class TestaCursoComAlunos {
 		
 		System.out.println("O a1 é equals ao Rodrigo?");
 		System.out.println(a1.equals(rodrigo));
+		
+		Set<Aluno> alunos = java.getAlunos();
+		Iterator<Aluno> iterador = alunos.iterator();
+
+		while (iterador.hasNext()) {
+		    System.out.println(iterador.next());
+		}
 		
 	}
 
